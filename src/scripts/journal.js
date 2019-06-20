@@ -8,7 +8,64 @@
 // objectWithGetterMethod.methodToGetData().then(functionThatRendersData)
 
 API.getJournalEntries().then(loopEntries)
-console.log("journal.js")
+// console.log("journal.js")
+
+let recordEntryBtn = document.querySelector("#record-entry-btn")
+// console.log("record entry button", recordEntryBtn)
+
+recordEntryBtn.addEventListener("click", () => {
+    // event.preventDefault()
+    console.log("button was clicked")
+    let entryDate = document.querySelector("#journalDate").value
+    let conceptsCovered = document.querySelector("#conceptsCovered").value
+    let journalEntry = document.querySelector("#journalEntry").value
+    let moodChoice = document.querySelector("#currentMood").value
+    // Call The function below that checks that each input field has content when the button is clicked
+    validateInputFields()
+    // Call the function below that checks that the content in each input matches the allowed characters
+    validateInputCharacters()
+
+})
+
+// The below function checks that each input field has something in it
+function validateInputFields () {
+if (document.journalForm.journalDate.value == "") {
+    alert("Please select a date");
+    document.journalForm.journalDate.focus();
+    return false;
+}
+if (document.journalForm.conceptsCovered.value == "") {
+    alert("Please list concepts covered");
+    document.journalForm.conceptsCovered.focus();
+    return false;
+}
+if (document.journalForm.journalEntry.value == "") {
+    alert("Please fill out journal entry");
+    document.journalForm.journalEntry.focus();
+    return false;
+}
+if (document.journalForm.currentMood.value == "") {
+    alert("Please choose your current mood");
+    document.journalForm.currentMood.focus();
+    return false;
+}
+    return ( true );
+}
+
+// The below function is to validate that what is entered into each input field is of the allowed characters
+function validateInputCharacters(inputtxt)
+{
+ var allowedCharacters = /^[0-9a-zA-Z{}():;]+$/;
+ if (inputtxt.value.match(allowedCharacters)) {
+    alert("Thank You")
+    return true;
+  }
+  else
+  {
+   alert("Does Not Meet Requirements");
+   return false;
+  }
+  }
 
 
 

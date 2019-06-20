@@ -12,3 +12,14 @@ const makeJournalEntryComponent = function(journalEntry) {
     </div>
     `;
 };
+
+// Defining factory function that generates an object representing a journal entry
+// Where will this function be called?
+const createEntry = function (date, concepts, entry, mood) {
+    return {
+        "Entry_Date": date,
+        "Concepts": concepts,
+        "Journal_Entry": entry,
+        "Mood": mood
+    }
+}
