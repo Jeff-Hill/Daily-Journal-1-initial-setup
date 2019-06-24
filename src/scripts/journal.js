@@ -13,64 +13,55 @@ API.getJournalEntries().then(loopEntries)
 let recordEntryBtn = document.querySelector("#record-entry-btn")
 // console.log("record entry button", recordEntryBtn)
 
+
+// This is the event listenter added to the Record Entry button to add the new entry to
+// the API and reload the DOM with the updated database of journal entries
 recordEntryBtn.addEventListener("click", () => {
-    // event.preventDefault()
     console.log("button was clicked")
+    // Had to update the makejournalentryComponent function to use these new variables for each property key
     let entryDate = document.querySelector("#journalDate").value
     let conceptsCovered = document.querySelector("#conceptsCovered").value
     let journalEntry = document.querySelector("#journalEntry").value
     let moodChoice = document.querySelector("#currentMood").value
+  // Define a new variable that calls the factory function defined to create a new entry object
+    let newEntry = createEntry(entryDate, conceptsCovered, journalEntry, moodChoice)
     // Call The function below that checks that each input field has content when the button is clicked
-    validateInputFields()
-    // Call the function below that checks that the content in each input matches the allowed characters
-    validateInputCharacters()
-
+    let basicValidation = validateInputFields()
+    // Call the function below that checks that the content in each text input matches the allowed characters
+    let charValidation = validateInputCharacters(conceptsCovered, journalEntry)
+    // createEntry(entryDate, conceptsCovered, journalEntry, moodChoice)
+    // Invoke the factory function, passing along the form field values
+console.log(basicValidation, charValidation)
+    // Use `fetch` with the POST method to add your entry to your API
+    // Add a conditional "if" statement to make sure both validation conditions evaluate as true
+    // before Posting the new entry to the API
+    if( basicValidation && charValidation) {
+      fetch("http://localhost:8088/journalEntries", { // Replace "url" with your API's URL
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newEntry)
+    })
+    // chain on another .then promise after the POST to call the API GET function again
+    .then(API.getJournalEntries)
+    // a final .then promise that takes the new object of entries and puts them into the
+    // loopEntries function that creates the DOM element
+    .then(allEntries => {
+      loopEntries(allEntries)
+    })
+    }
 })
 
-// The below function checks that each input field has something in it
-function validateInputFields () {
-if (document.journalForm.journalDate.value == "") {
-    alert("Please select a date");
-    document.journalForm.journalDate.focus();
-    return false;
-}
-if (document.journalForm.conceptsCovered.value == "") {
-    alert("Please list concepts covered");
-    document.journalForm.conceptsCovered.focus();
-    return false;
-}
-if (document.journalForm.journalEntry.value == "") {
-    alert("Please fill out journal entry");
-    document.journalForm.journalEntry.focus();
-    return false;
-}
-if (document.journalForm.currentMood.value == "") {
-    alert("Please choose your current mood");
-    document.journalForm.currentMood.focus();
-    return false;
-}
-    return ( true );
-}
-
-// The below function is to validate that what is entered into each input field is of the allowed characters
-function validateInputCharacters(inputtxt)
-{
- var allowedCharacters = /^[0-9a-zA-Z{}():;]+$/;
- if (inputtxt.value.match(allowedCharacters)) {
-    alert("Thank You")
-    return true;
-  }
-  else
-  {
-   alert("Does Not Meet Requirements");
-   return false;
-  }
-  }
 
 
 
 
 
+
+
+
+// Old code from Daily Journals 1-5
 // /*
 //     Define the keys and value for a JavaScript object that
 //     represents a journal entry about what you learned today
