@@ -73,4 +73,3 @@ function createEntry(date, concept, entry, mood) {
 
 
 
-

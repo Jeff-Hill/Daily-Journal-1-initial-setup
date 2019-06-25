@@ -2,24 +2,24 @@
   "journalEntries": [
     {
       "id": "1",
-      "date": "05/25/2019",
-      "concept": "Command line basics, Git & GitHub, Semantic HTML",
-      "entry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
-      "mood": "Excited"
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "Excited"
     },
     {
       "id": "2",
-      "date": "05/30/19",
-      "concept": "Using the debugger, basic HTML layout, flexbox",
-      "entry": "Basic html layout and how to connect a css file to it. What is flexbox, how to use it. We played the Froggy Game to play with Flexbox and the Dinner Table game to practice CSS",
-      "mood": "Happy"
+      "entryDate": "05/30/19",
+      "conceptsCovered": "Using the debugger, basic HTML layout, flexbox",
+      "journalEntry": "Basic html layout and how to connect a css file to it. What is flexbox, how to use it. We played the Froggy Game to play with Flexbox and the Dinner Table game to practice CSS",
+      "moodChoice": "Happy"
     },
     {
       "id": "3",
-      "date": "06/03/2019",
-      "concept": "Manipulating the DOM, Javascript Objects, Functions & Logic",
-      "entry": "Learned how to inject HTML into the index file using Javascript, practiced object/array/function exercises",
-      "mood": "Worried"
+      "entryDate": "06/03/2019",
+      "conceptsCovered": "Manipulating the DOM, Javascript Objects, Functions & Logic",
+      "journalEntry": "Learned how to inject HTML into the index file using Javascript, practiced object/array/function exercises",
+      "moodChoice": "Worried"
     },
     {
       "id": "TVcty82"
@@ -175,6 +175,13 @@
       "journalEntry": "this a final test of daily journal 6",
       "moodChoice": "fine",
       "id": "WFbUu4T"
+    },
+    {
+      "entryDate": "2019-06-24",
+      "conceptsCovered": "Adding button to form",
+      "journalEntry": "Will preventdefault work for button inside a form element",
+      "moodChoice": "happy",
+      "id": "vaNqKEg"
     }
   ]
 }

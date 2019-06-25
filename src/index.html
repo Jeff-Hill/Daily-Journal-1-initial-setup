@@ -36,10 +36,29 @@
                     <option value="worried">Worried</option>
                 </select>
             </fieldset>
-        </form>
             <fieldset class="dailyJournal">
                 <button id="record-entry-btn">Record Journal Entry</button>
             </fieldset>
+            <fieldset id="mood_radio_buttons">
+                <legend>
+                    <label>Filter Journal Entries by Mood</label>
+                </legend>
+                <legend>
+                    <input type="radio" name="mood" value="happy" id="radio_1">
+                    <label for="radio_1">Happy</label>
+                    <input type="radio" name="mood" value="sad" id="radio_2">
+                    <label for="radio_2">Sad</label>
+                    <input type="radio" name="mood" value="frustrated" id="radio_3">
+                    <label for="radio_3">Frustrated</label>
+                    <input type="radio" name="mood" value="fine" id="radio_4">
+                    <label for="radio_4">Fine</label>
+                    <input type="radio" name="mood" value="excited" id="radio_5">
+                    <label for="radio_5">Excited</label>
+                    <input type="radio" name="mood" value="worried" id="radio_6">
+                    <label for="radio_6">Worried</label>
+                </legend>
+            </fieldset>
+        </form>
 
 
         <article class="entryLog"></article>

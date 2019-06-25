@@ -17,6 +17,7 @@ let recordEntryBtn = document.querySelector("#record-entry-btn")
 // This is the event listenter added to the Record Entry button to add the new entry to
 // the API and reload the DOM with the updated database of journal entries
 recordEntryBtn.addEventListener("click", () => {
+    event.preventDefault()
     console.log("button was clicked")
     // Had to update the makejournalentryComponent function to use these new variables for each property key
     let entryDate = document.querySelector("#journalDate").value
@@ -53,6 +54,40 @@ console.log(basicValidation, charValidation)
     }
 })
 
+let happyRadioBtn = document.querySelector("#radio_1")
+let sadRadioBtn = document.querySelector("#radio_2")
+let frustratedRadioBtn = document.querySelector("#radio_3")
+let fineRadioBtn = document.querySelector("#radio_4")
+let excitedRadioBtn = document.querySelector("#radio_5")
+let worriedRadioBtn = document.querySelector("#radio_6")
+
+
+happyRadioBtn.addEventListener("click", event => {
+  const mood = event.target.value
+  console.log(mood)
+  let happyArr = API.getJournalEntries.filter(mood)
+  console.log(happyArr)
+  }
+)
+sadRadioBtn.addEventListener("click", event => {
+  const mood = event.target.value
+})
+
+frustratedRadioBtn.addEventListener("click", event => {
+  const mood = event.target.value
+})
+
+fineRadioBtn.addEventListener("click", event => {
+  const mood = event.target.value
+})
+
+excitedRadioBtn.addEventListener("click", event => {
+  const mood = event.target.value
+})
+
+worriedRadioBtn.addEventListener("click", event => {
+  const mood = event.target.value
+})
 
 
 
