@@ -1,4 +1,5 @@
-
+// The makeJournalEntryComponent function only defines how the journal entry will be structured.
+// It does not actually create the journal entry in the DOM
 const makeJournalEntryComponent = function(journalEntry) {
     // Create your own HTML structure for a journal entry
     //
@@ -10,9 +11,29 @@ const makeJournalEntryComponent = function(journalEntry) {
     </p>
     <h4>Mood: ${journalEntry.moodChoice}</h4>
     <h3>Entry Date: ${journalEntry.entryDate}</h3>
+    <button class="delete-btn" id="btn-delete-${journalEntry.id}">Delete</button>
     </div>
     `;
 };
+// create a delete button element above that interpolates the journal entry id onto the button id so it is unique
+
+
+// Define a function that targets All the delete buttons from the makejournalentry component function
+// run a loop on those buttons and add the click event listener
+const deleteBtnEvent = function() {
+    const deleteBtn = document.querySelectorAll(".delete-btn")
+    console.log(deleteBtn)
+    for (let i = 0; i < deleteBtn.length; i++) {
+        deleteBtn[i].addEventListener("click", () => {
+            console.log("delete button clicked", deleteBtn[i])
+        })
+    }
+
+}
+
+
+
+
 
 // The below function validates that each input field has something in it
 function validateInputFields () {
