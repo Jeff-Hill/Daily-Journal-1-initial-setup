@@ -1,7 +1,5 @@
-/*
-    Define the keys and value for a JavaScript object that
-    represents a journal entry about what you learned today
-*/
+
+// Define the keys and value for a JavaScript object that represents a journal entry about what you learned today
 // fetch("http://localhost:3000/journalEntries") // Fetch from the API
 //     .then(entries => entries.json())  // Parse as JSON
 //     .then(entries => {
@@ -13,6 +11,8 @@
 
 //     })
 
+
+// Function to get the entries from the database
 const API = {
   getJournalEntries() {
     return fetch("http://localhost:8088/journalEntries")
@@ -20,6 +20,7 @@ const API = {
   }
 };
 
+// Function to make a fetch call to delete selected journal entry
  function deleteEntry(id) {
    console.log(id)
           return fetch(`http://localhost:8088/journalEntries/${id}`, {

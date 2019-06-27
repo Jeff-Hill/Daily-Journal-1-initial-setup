@@ -25,8 +25,14 @@ const deleteBtnEvent = function() {
     console.log(deleteBtn)
     for (let i = 0; i < deleteBtn.length; i++) {
         deleteBtn[i].addEventListener("click", () => {
+    // within the delete button eventlistener need to single out the id # of the journal entry so it can be deleted
+    // do this by declaring a variable and targeting the id of the button
+    // use split to say where you want to split the id into pieces which creates an array.
+    // then identify which index of the array you want to single out i.e.[2] grabs the id#
                 let btnId = event.target.id.split("-")[2]
                 console.log(btnId)
+    // call the deleteEntry function defined in data.js and pass in the new variable from above that  now holds the
+    // value of the entry id
             deleteEntry(btnId)
             console.log("delete button clicked", deleteBtn[i])
         })
