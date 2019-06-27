@@ -35,12 +35,35 @@ const deleteBtnEvent = function() {
     // value of the entry id
             deleteEntry(btnId)
             console.log("delete button clicked", deleteBtn[i])
+
+
+            getAndDisplayEntries()
+
+
         })
 
     }
 
 }
 
+// getAndDisplayLegos()
+
+// function getAndDisplayLegos() {
+//     legoList.innerHTML = ""
+//     getLegos()
+//     .then( legoData => listLegos(legoData))
+//   }
+
+//   function getLegos() {
+//     return fetch("http://localhost:8088/legos")
+//     .then( legoData => legoData.json())
+//   }
+
+//   function listLegos(legoArr) {
+//     legoArr.forEach( lego => {
+//       legoList.appendChild(createLegoComponent(lego))
+//     })
+//   }
 
 
 
