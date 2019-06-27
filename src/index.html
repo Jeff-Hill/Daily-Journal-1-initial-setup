@@ -12,22 +12,22 @@
 <body>
     <main class="container">
         <h1>Daily Journal</h1>
-        <form action="">
+        <form action="" name="journalForm">
             <fieldset class="dailyJournal">
                 <label for="journalDate">Date of Entry</label>
-                <input type="date" name="journalDate" id="journalDate">
+                <input class="inputField" type="date" name="journalDate" id="journalDate" required>
             </fieldset>
             <fieldset class="dailyJournal">
                 <label for="conceptsCovered">Concepts Covered</label>
-                <input type="text" name="conceptsCovered" id="conceptsCovered" placeholder="What did you discusss in class today?">
+                <input class="inputField" type="text" name="conceptsCovered" id="conceptsCovered" placeholder="What did you discusss in class today?" required>
             </fieldset>
             <fieldset class="dailyJournal">
                 <label for="journalEntry">Journal Entry</label>
-                <input type="textarea" name="journalEntry" id="journalEntry" placeholder="What did you learn today?">
+                <input class="inputField" type="textarea" name="journalEntry" id="journalEntry" placeholder="What did you learn today?" required>
             </fieldset>
             <fieldset class="dailyJournal">
                 <label for="mood">Mood for the day</label>
-                <select name="currentMood" id="currentMood">
+                <select name="currentMood" id="currentMood" required>
                     <option value="happy">Happy</option>
                     <option value="sad">Sad</option>
                     <option value="frustrated">Frustrated</option>
@@ -37,11 +37,30 @@
                 </select>
             </fieldset>
             <fieldset class="dailyJournal">
-                <button>Record Journal Entry</button>
+                <button id="record-entry-btn">Record Journal Entry</button>
             </fieldset>
-
-
+            <fieldset id="mood_radio_buttons">
+                <legend>
+                    <label>Filter Journal Entries by Mood</label>
+                </legend>
+                <legend>
+                    <input type="radio" name="mood" value="happy" id="radio_1">
+                    <label for="radio_1">Happy</label>
+                    <input type="radio" name="mood" value="sad" id="radio_2">
+                    <label for="radio_2">Sad</label>
+                    <input type="radio" name="mood" value="frustrated" id="radio_3">
+                    <label for="radio_3">Frustrated</label>
+                    <input type="radio" name="mood" value="fine" id="radio_4">
+                    <label for="radio_4">Fine</label>
+                    <input type="radio" name="mood" value="excited" id="radio_5">
+                    <label for="radio_5">Excited</label>
+                    <input type="radio" name="mood" value="worried" id="radio_6">
+                    <label for="radio_6">Worried</label>
+                </legend>
+            </fieldset>
         </form>
+
+
         <article class="entryLog"></article>
     </main>
     <!-- <script src="scripts/journal.js"></script> -->
