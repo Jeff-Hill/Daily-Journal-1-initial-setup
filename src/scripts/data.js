@@ -20,11 +20,11 @@ const API = {
   }
 };
 
- // let deleteEntry = function deleteEntry(id) {
-      //   //   return fetch(`http://localhost:8088/${id}`, {
-      //   //     method: "DELETE",
-      //   //     headers:{"Content-Type": "application/json"}
-      //   //   }
-      //   //   )
-      //   // }
+ function deleteEntry(id) {
+   console.log(id)
+          return fetch(`http://localhost:8088/journalEntries/${id}`, {
+            method: "DELETE",
+            headers:{"Content-Type": "application/json"}
+          })
+        }
 

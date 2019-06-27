@@ -25,12 +25,15 @@ const deleteBtnEvent = function() {
     console.log(deleteBtn)
     for (let i = 0; i < deleteBtn.length; i++) {
         deleteBtn[i].addEventListener("click", () => {
+                let btnId = event.target.id.split("-")[2]
+                console.log(btnId)
+            deleteEntry(btnId)
             console.log("delete button clicked", deleteBtn[i])
         })
+
     }
 
 }
-
 
 
 
