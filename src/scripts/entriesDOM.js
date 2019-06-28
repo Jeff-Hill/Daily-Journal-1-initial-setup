@@ -14,15 +14,10 @@ const loopEntries = (entries) => {
   // the entry DOM elements
   deleteBtnEvent()
 
-}
-
-
-function getAndDisplayEntries() {
-  journalContainer.innerHTML = ""
-  console.log("before api call")
-  getJournalEntries()
-  .then(entries => loopEntries(entries))
-
 
 }
+
+
+
+
 
