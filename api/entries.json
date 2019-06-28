@@ -1,187 +1,81 @@
 {
   "journalEntries": [
     {
-      "id": "1",
+      "id": 1,
       "entryDate": "05/25/2019",
       "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
       "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
       "moodChoice": "excited"
     },
     {
-      "id": "2",
-      "entryDate": "05/30/19",
-      "conceptsCovered": "Using the debugger, basic HTML layout, flexbox",
-      "journalEntry": "Basic html layout and how to connect a css file to it. What is flexbox, how to use it. We played the Froggy Game to play with Flexbox and the Dinner Table game to practice CSS",
-      "moodChoice": "fine"
+      "id": 2,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "id": "3",
-      "entryDate": "06/03/2019",
-      "conceptsCovered": "Manipulating the DOM, Javascript Objects, Functions & Logic",
-      "journalEntry": "Learned how to inject HTML into the index file using Javascript, practiced object/array/function exercises",
-      "moodChoice": "worried"
+      "id": 3,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "id": "TVcty82"
+      "id": 4,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "id": "Bw00t5s"
+      "id": 5,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "id": "eIvQn7Q"
+      "id": 6,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "fine",
-      "id": "tQfgHx2"
+      "id": 7,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "sad",
-      "id": "jnnT_Ip"
+      "id": 8,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "entryDate": "2019-06-27",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "sad",
-      "id": "39Pyk5_"
+      "id": 9,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "id": "da33Q-q"
+      "id": 10,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     },
     {
-      "id": "C_j_C-A"
-    },
-    {
-      "entryDate": "2019-06-25",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "happy",
-      "id": "jzePRY7"
-    },
-    {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "excited",
-      "id": "1BqhOvT"
-    },
-    {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "worried",
-      "id": "_0A40uu"
-    },
-    {
-      "entryDate": "2019-06-28",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "worried",
-      "id": "Pj4r1rO"
-    },
-    {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "Test",
-      "journalEntry": "Testing",
-      "moodChoice": "excited",
-      "id": "87FyYSr"
-    },
-    {
-      "entryDate": "",
-      "conceptsCovered": "",
-      "journalEntry": "",
-      "moodChoice": "frustrated",
-      "id": "nrhmXnZ"
-    },
-    {
-      "entryDate": "",
-      "conceptsCovered": "",
-      "journalEntry": "",
-      "moodChoice": "frustrated",
-      "id": "P1kBGlF"
-    },
-    {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "!",
-      "journalEntry": "",
-      "moodChoice": "frustrated",
-      "id": "CvGPzza"
-    },
-    {
-      "entryDate": "",
-      "conceptsCovered": "!",
-      "journalEntry": "!",
-      "moodChoice": "happy",
-      "id": "29HQfbZ"
-    },
-    {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "Test!",
-      "journalEntry": "TEsting",
-      "moodChoice": "happy",
-      "id": "os6HAf9"
-    },
-    {
-      "entryDate": "2019-06-26",
-      "conceptsCovered": "Test",
-      "journalEntry": "TEsting",
-      "moodChoice": "happy",
-      "id": "zhxfpVf"
-    },
-    {
-      "entryDate": "2019-06-24",
-      "conceptsCovered": "CSS",
-      "journalEntry": "CSS",
-      "moodChoice": "happy",
-      "id": "FNxvFFU"
-    },
-    {
-      "entryDate": "2019-06-24",
-      "conceptsCovered": "WEbpack and CSS",
-      "journalEntry": "WEbpack and CSS",
-      "moodChoice": "happy",
-      "id": "pjUwcds"
-    },
-    {
-      "entryDate": "2019-06-24",
-      "conceptsCovered": "Testing new JSON ignore",
-      "journalEntry": "TEsting ignore",
-      "moodChoice": "happy",
-      "id": "BW5cFmG"
-    },
-    {
-      "entryDate": "2019-06-24",
-      "conceptsCovered": "testing again",
-      "journalEntry": "json",
-      "moodChoice": "happy",
-      "id": "0c7zPW2"
-    },
-    {
-      "entryDate": "2019-06-25",
-      "conceptsCovered": "Test",
-      "journalEntry": "testing",
-      "moodChoice": "happy",
-      "id": "7GT30sQ"
-    },
-    {
-      "entryDate": "2019-06-24",
-      "conceptsCovered": "This is a Test",
-      "journalEntry": "this a final test of daily journal 6",
-      "moodChoice": "fine",
-      "id": "WFbUu4T"
-    },
-    {
-      "entryDate": "2019-06-24",
-      "conceptsCovered": "Adding button to form",
-      "journalEntry": "Will preventdefault work for button inside a form element",
-      "moodChoice": "happy",
-      "id": "vaNqKEg"
+      "id": 11,
+      "entryDate": "05/25/2019",
+      "conceptsCovered": "Command line basics, Git & GitHub, Semantic HTML",
+      "journalEntry": "Today we set up our terminals and loaded git, played around with commands in the terminal to create directories and files. Reviewed semantic HTML, and made our first GitHub repository and pushed it to git.",
+      "moodChoice": "excited"
     }
   ]
 }
